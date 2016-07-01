@@ -1,0 +1,23 @@
+{
+  "name": "stratumn-sendgrid",
+  "description": "Sendgrid helper to be used in a Stratumn Agent",
+  "version": "0.0.0",
+  "dependencies": {
+    "sendgrid": "^2.0.0"
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "author": "Stratumn Team <>",
+  "license": "ISC",
+  "devDependencies": {
+    "jsinspect": "^0.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:stratumn/stratumn-sendgrid.git"
+  }
+}
