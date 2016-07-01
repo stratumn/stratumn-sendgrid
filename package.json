@@ -1,7 +1,7 @@
 {
   "name": "stratumn-sendgrid",
   "description": "Sendgrid helper to be used in a Stratumn Agent",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "dependencies": {
     "sendgrid": "^2.0.0"
   },
