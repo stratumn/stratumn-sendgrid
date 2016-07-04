@@ -6,15 +6,18 @@
     "sendgrid": "^2.0.0"
   },
   "scripts": {
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "lint": "eslint index.js example.js"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
   },
   "author": "Stratumn Team <>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
-    "jsinspect": "^0.7.0"
+    "eslint": "^2.3.0",
+    "eslint-config-airbnb": "^6.0.2",
+    "babel-eslint": "^6.0.0"
   },
   "repository": {
     "type": "git",

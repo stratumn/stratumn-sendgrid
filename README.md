@@ -2,9 +2,6 @@
 
 Sendgrid helper to be used in a Stratumn Agent
 
-[![build status](https://secure.travis-ci.org/stratumn/stratumn-sendgrid.svg)](http://travis-ci.org/stratumn/stratumn-sendgrid)
-[![dependency status](https://david-dm.org/stratumn/stratumn-sendgrid.svg)](https://david-dm.org/stratumn/stratumn-sendgrid)
-
 ## Installation
 
 ```
@@ -13,13 +10,19 @@ npm install --save stratumn-sendgrid
 
 ## Usage
 
+Setup your API key:
+
+```bash
+stratumn-set-config myApp SENDGRID_API_KEY=<mykey>
+```
+
 In your agent:
 
 ````javascript
-const EmailHelper = require('./stratumn-sendgrid');
+const EmailHelper = require('stratumn-sendgrid');
 
 module.exports = {
-  requestSignatures: function(data) {
+  requestSignatures: data => {
     EmailHelper.send({
       to: data.email,
       from: data.requesterEmail,
@@ -30,7 +33,7 @@ module.exports = {
       .catch(err => this.reject(err));
   }
 };
-``
+````
 
 ## Credits
 [Stratumn Team](https://github.com/stratumn/)

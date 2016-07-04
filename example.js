@@ -1,7 +1,7 @@
-const EmailHelper = require('./stratumn-sendgrid');
+const EmailHelper = require('stratumn-sendgrid');
 
 module.exports = {
-  requestSignatures: function(data) {
+  requestSignatures: (data) => {
     EmailHelper.send({
       to: data.email,
       from: data.requesterEmail,
