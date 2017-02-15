@@ -40,4 +40,4 @@ module.exports = {
 
 ## License
 
-MIT
+Mozilla Public Liense 2.0
