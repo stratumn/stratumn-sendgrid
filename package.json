@@ -12,8 +12,8 @@
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
   },
-  "author": "Stratumn Team <>",
-  "license": "MIT",
+  "author": "Stratumn Team",
+  "license": "MPL-2.0",
   "devDependencies": {
     "eslint": "^2.3.0",
     "eslint-config-airbnb": "^6.0.2",
