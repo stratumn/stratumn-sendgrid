@@ -40,4 +40,4 @@ module.exports = {
 
 ## License
 
-Mozilla Public Liense 2.0
+Apache License 2.0
